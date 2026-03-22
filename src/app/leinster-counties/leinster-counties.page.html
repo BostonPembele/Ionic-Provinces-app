@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+    <ion-back-button > </ion-back-button>
+    </ion-buttons>
+    <ion-title>Leinster Counties</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ul>
+  @for(county of counties;track county){
+    <li>{{county}}</li>
+  }
+</ul>
+</ion-content>
